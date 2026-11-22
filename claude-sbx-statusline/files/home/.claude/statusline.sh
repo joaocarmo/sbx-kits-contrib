@@ -89,7 +89,7 @@ fi
 # --- Cost ---
 cost_seg="${MAGENTA}$(printf '$%.2f' "$cost")${RST}"
 
-line1=$(join "${BOLD}${CYAN}🐳 Docker Sandboxes${RST}" "${YELLOW}$(hostname)${RST}" "${BLUE}${dir}${RST}${git_seg}")
+line1=$(join "${BOLD}${CYAN}🐳 Docker Sandboxes${RST}" "${YELLOW}${HOSTNAME}${RST}" "${BLUE}${dir}${RST}${git_seg}")
 line2=$(join "$model_seg" "$ctx_seg" "$mem_seg" "$load_seg" "$cost_seg")
 
 printf '%s\n%s' "$line1" "$line2"

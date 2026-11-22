@@ -83,4 +83,4 @@ sbx run claude --kit ./claude-sbx-statusline .
 ## Requirements
 
 The script and the install merge both use `jq`, which is present on the `claude-code` base
-image. It also uses `git`, `awk`, and `hostname` — all standard on the base image.
+image. It also uses `git` and `awk`, both standard on the base image.
